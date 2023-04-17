@@ -1,0 +1,1367 @@
+ <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="h_html">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="h_head">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="h_title"/>
+                            <xs:element name="model">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="itext">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element maxOccurs="unbounded" name="translation">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="text">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="value"/>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="id" type="xs:string"/>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="default" type="xs:string"/>
+                                                            <xs:attribute name="lang" type="xs:string"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="instance">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="WIP_WSIB_Illness_or_Injury">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="recordScreenViewEvents"/>
+                                                                <xs:element type="xs:string" name="refreshOnSaveOrSubmit"/>
+                                                                <xs:element name="introductionGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="introductionNote"/>
+                                                                            <xs:element type="xs:string" name="privacyWC"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="categoryGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField1"/>
+                                                                            <xs:element type="xs:string" name="categoryOfIllness"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="nihlGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="nihlNote"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="physicalInjuryGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="physicalNote"/>
+                                                                            <xs:element type="xs:string" name="requiredField2"/>
+                                                                            <xs:element type="xs:string" name="accidentIllnessCat"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="suddenInjuryGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField3"/>
+                                                                            <xs:element type="xs:string" name="natureOfAccident"/>
+                                                                            <xs:element type="xs:string" name="amputation"/>
+                                                                            <xs:element type="xs:string" name="bruise"/>
+                                                                            <xs:element type="xs:string" name="burn"/>
+                                                                            <xs:element type="xs:string" name="cut"/>
+                                                                            <xs:element type="xs:string" name="discHerniation"/>
+                                                                            <xs:element type="xs:string" name="electricShock"/>
+                                                                            <xs:element type="xs:string" name="faint"/>
+                                                                            <xs:element type="xs:string" name="objectInEye"/>
+                                                                            <xs:element type="xs:string" name="fracture"/>
+                                                                            <xs:element type="xs:string" name="suddenHernia"/>
+                                                                            <xs:element type="xs:string" name="suddenPlantar"/>
+                                                                            <xs:element type="xs:string" name="suddenSeizure"/>
+                                                                            <xs:element type="xs:string" name="suddenSprain"/>
+                                                                            <xs:element type="xs:string" name="suddenOther"/>
+                                                                            <xs:element type="xs:string" name="isAmputationEN"/>
+                                                                            <xs:element type="xs:string" name="isBruiseEN"/>
+                                                                            <xs:element type="xs:string" name="isBurnEN"/>
+                                                                            <xs:element type="xs:string" name="isCutEN"/>
+                                                                            <xs:element type="xs:string" name="isDiscHerniationEN"/>
+                                                                            <xs:element type="xs:string" name="isElectricShockEN"/>
+                                                                            <xs:element type="xs:string" name="isFaintEN"/>
+                                                                            <xs:element type="xs:string" name="isObjectInEyeEN"/>
+                                                                            <xs:element type="xs:string" name="isFractureEN"/>
+                                                                            <xs:element type="xs:string" name="isSuddenHerniaEN"/>
+                                                                            <xs:element type="xs:string" name="isSuddenPlantarEN"/>
+                                                                            <xs:element type="xs:string" name="isSuddenSeizureEN"/>
+                                                                            <xs:element type="xs:string" name="isSuddenSprainEN"/>
+                                                                            <xs:element type="xs:string" name="isSuddenOtherEN"/>
+                                                                            <xs:element type="xs:string" name="displaySuddenInjuryEN"/>
+                                                                            <xs:element type="xs:string" name="isAmputationFR"/>
+                                                                            <xs:element type="xs:string" name="isBruiseFR"/>
+                                                                            <xs:element type="xs:string" name="isBurnFR"/>
+                                                                            <xs:element type="xs:string" name="isCutFR"/>
+                                                                            <xs:element type="xs:string" name="isDiscHerniationFR"/>
+                                                                            <xs:element type="xs:string" name="isElectricShockFR"/>
+                                                                            <xs:element type="xs:string" name="isFaintFR"/>
+                                                                            <xs:element type="xs:string" name="isObjectInEyeFR"/>
+                                                                            <xs:element type="xs:string" name="isFractureFR"/>
+                                                                            <xs:element type="xs:string" name="isSuddenHerniaFR"/>
+                                                                            <xs:element type="xs:string" name="isSuddenPlantarFR"/>
+                                                                            <xs:element type="xs:string" name="isSuddenSeizureFR"/>
+                                                                            <xs:element type="xs:string" name="isSuddenSprainFR"/>
+                                                                            <xs:element type="xs:string" name="isSuddenOtherFR"/>
+                                                                            <xs:element type="xs:string" name="displaySuddenInjuryFR"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="gradualInjuryGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField4"/>
+                                                                            <xs:element type="xs:string" name="gradualOccurrence"/>
+                                                                            <xs:element type="xs:string" name="faintGradual"/>
+                                                                            <xs:element type="xs:string" name="gradualHernia"/>
+                                                                            <xs:element type="xs:string" name="gradualPlantar"/>
+                                                                            <xs:element type="xs:string" name="gradualStrain"/>
+                                                                            <xs:element type="xs:string" name="gradualSeizure"/>
+                                                                            <xs:element type="xs:string" name="gradualSprain"/>
+                                                                            <xs:element type="xs:string" name="gradualOther"/>
+                                                                            <xs:element type="xs:string" name="isFaintGradualEN"/>
+                                                                            <xs:element type="xs:string" name="isGradualHerniaEN"/>
+                                                                            <xs:element type="xs:string" name="isGradualPlantarEN"/>
+                                                                            <xs:element type="xs:string" name="isGradualStrainEN"/>
+                                                                            <xs:element type="xs:string" name="isGradualSeizureEN"/>
+                                                                            <xs:element type="xs:string" name="isGradualSprainEN"/>
+                                                                            <xs:element type="xs:string" name="isGradualOtherEN"/>
+                                                                            <xs:element type="xs:string" name="displayGradualInjuryEN"/>
+                                                                            <xs:element type="xs:string" name="isFaintGradualFR"/>
+                                                                            <xs:element type="xs:string" name="isGradualHerniaFR"/>
+                                                                            <xs:element type="xs:string" name="isGradualPlantarFR"/>
+                                                                            <xs:element type="xs:string" name="isGradualStrainFR"/>
+                                                                            <xs:element type="xs:string" name="isGradualSeizureFR"/>
+                                                                            <xs:element type="xs:string" name="isGradualSprainFR"/>
+                                                                            <xs:element type="xs:string" name="isGradualOtherFR"/>
+                                                                            <xs:element type="xs:string" name="displayGradualInjuryFR"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="mentalHealthGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField5"/>
+                                                                            <xs:element type="xs:string" name="mentalHealth"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="associatedClaimNumberGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="associatedClaimNumber"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="pwiInfoGroup1">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField6"/>
+                                                                            <xs:element type="xs:string" name="nameNote"/>
+                                                                            <xs:element type="xs:string" name="firstName"/>
+                                                                            <xs:element type="xs:string" name="lastName"/>
+                                                                            <xs:element type="xs:string" name="PWIFullName"/>
+                                                                            <xs:element type="xs:string" name="pronoun_Ext"/>
+                                                                            <xs:element type="xs:string" name="workerNumber"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="otherPronounGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="pronounNotListed"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="pwiInfoGroup2">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField7"/>
+                                                                            <xs:element type="xs:string" name="gender"/>
+                                                                            <xs:element type="xs:string" name="dateOfBirth"/>
+                                                                            <xs:element type="xs:string" name="dateOfBirthLocal"/>
+                                                                            <xs:element type="xs:string" name="claimantAge"/>
+                                                                            <xs:element type="xs:string" name="languageOfService_Ext"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="otherLanguageGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="additionalLanguageDetails"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="pwiInfoGroupSIN">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField8"/>
+                                                                            <xs:element type="xs:string" name="sinNote"/>
+                                                                            <xs:element type="xs:string" name="sin"/>
+                                                                            <xs:element type="xs:string" name="haveSIN"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="verifySINGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="verifySIN"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element type="xs:string" name="validSIN"/>
+                                                                <xs:element name="invalidSINGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="sinInvalidNote"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="under16Group">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField9"/>
+                                                                            <xs:element type="xs:string" name="guardianFirstName"/>
+                                                                            <xs:element type="xs:string" name="guardianLastName"/>
+                                                                            <xs:element type="xs:string" name="guardianFullName"/>
+                                                                            <xs:element type="xs:string" name="guardianPhone"/>
+                                                                            <xs:element type="xs:string" name="guardianRelationship"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="pwiAddressGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="mailingAddressNote"/>
+                                                                            <xs:element type="xs:string" name="requiredField10"/>
+                                                                            <xs:element type="xs:string" name="claimantPrimaryAddress"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="mailingAddressCallOut">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="verifyMailingAddress"/>
+                                                                            <xs:element type="xs:string" name="mailingAddressLine"/>
+                                                                            <xs:element type="xs:string" name="mailingCity"/>
+                                                                            <xs:element type="xs:string" name="mailingDisplayProvince"/>
+                                                                            <xs:element type="xs:string" name="mailingDisplayState"/>
+                                                                            <xs:element type="xs:string" name="mailingPostalCode"/>
+                                                                            <xs:element type="xs:string" name="mailingZipCode"/>
+                                                                            <xs:element type="xs:string" name="mailingDisplayCountry"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="displayCanadaMailingAddressGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="canadaMailingAddressNote"/>
+                                                                            <xs:element type="xs:string" name="canadaMailingAddressLine1"/>
+                                                                            <xs:element type="xs:string" name="canadaMailingCity"/>
+                                                                            <xs:element type="xs:string" name="canadaMailingProvince"/>
+                                                                            <xs:element type="xs:string" name="canadaMailingPostalCode"/>
+                                                                            <xs:element type="xs:string" name="canadaMailingCountry"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="displayUSMailingAddressGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="usMailingAddressNote"/>
+                                                                            <xs:element type="xs:string" name="usMailingAddressLine1"/>
+                                                                            <xs:element type="xs:string" name="usMailingCity"/>
+                                                                            <xs:element type="xs:string" name="usMailingState"/>
+                                                                            <xs:element type="xs:string" name="usMailingZipCode"/>
+                                                                            <xs:element type="xs:string" name="usMailingCountry"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="displayOtherMailingAddressGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="otherMailingAddressNote"/>
+                                                                            <xs:element type="xs:string" name="otherMailingAddressLine1"/>
+                                                                            <xs:element type="xs:string" name="otherMailingCity"/>
+                                                                            <xs:element type="xs:string" name="otherMailingCountry"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="employerInformation">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField11"/>
+                                                                            <xs:element type="xs:string" name="employerNote"/>
+                                                                            <xs:element type="xs:string" name="employerName"/>
+                                                                            <xs:element type="xs:string" name="phoneNote"/>
+                                                                            <xs:element type="xs:string" name="workNumber"/>
+                                                                            <xs:element type="xs:string" name="employerExt"/>
+                                                                            <xs:element type="xs:string" name="noWorkNumber"/>
+                                                                            <xs:element type="xs:string" name="employerPrimaryAddress"/>
+                                                                            <xs:element type="xs:string" name="noEmployerAddress"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="wsibNoteGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="wsibNote"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="employerAddressCallOut">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="verifyEmployerAddress"/>
+                                                                            <xs:element type="xs:string" name="employerAddressLine"/>
+                                                                            <xs:element type="xs:string" name="employerCity"/>
+                                                                            <xs:element type="xs:string" name="employerDisplayProvince"/>
+                                                                            <xs:element type="xs:string" name="employerDisplayState"/>
+                                                                            <xs:element type="xs:string" name="employerPostalCode"/>
+                                                                            <xs:element type="xs:string" name="employerZipCode"/>
+                                                                            <xs:element type="xs:string" name="employerDisplayCountry"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="displayCanadaEmployerAddressGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="canadaEmployerAddressNote"/>
+                                                                            <xs:element type="xs:string" name="canadaEmployerAddressLine1"/>
+                                                                            <xs:element type="xs:string" name="canadaEmployerCity"/>
+                                                                            <xs:element type="xs:string" name="canadaEmployerProvince"/>
+                                                                            <xs:element type="xs:string" name="canadaEmployerPostalCode"/>
+                                                                            <xs:element type="xs:string" name="canadaEmployerCountry"/>
+                                                                            <xs:element type="xs:string" name="canadaEmployerNameAndAddress"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="displayUSEmployerAddressGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="usEmployerAddressNote"/>
+                                                                            <xs:element type="xs:string" name="usEmployerAddressLine1"/>
+                                                                            <xs:element type="xs:string" name="usEmployerCity"/>
+                                                                            <xs:element type="xs:string" name="usEmployerState"/>
+                                                                            <xs:element type="xs:string" name="usEmployerZipCode"/>
+                                                                            <xs:element type="xs:string" name="usEmployerCountry"/>
+                                                                            <xs:element type="xs:string" name="usEmployerNameAndAddress"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="displayOtherEmployerAddressGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="otherEmployerAddressNote"/>
+                                                                            <xs:element type="xs:string" name="otherEmployerAddressLine1"/>
+                                                                            <xs:element type="xs:string" name="otherEmployerCity"/>
+                                                                            <xs:element type="xs:string" name="otherEmployerCountry"/>
+                                                                            <xs:element type="xs:string" name="otherEmployerNameAndAddress"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="referenceNumberGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="generateReferenceNumber"/>
+                                                                            <xs:element type="xs:string" name="referenceNumber"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="displayReferenceNumberGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="onboardingCompleteNote"/>
+                                                                            <xs:element type="xs:string" name="displayReferenceNumber"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="workHistoryGroup1">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="workHistoryNoteWorkplace"/>
+                                                                            <xs:element type="xs:string" name="requiredField12"/>
+                                                                            <xs:element type="xs:string" name="occupation"/>
+                                                                            <xs:element type="xs:string" name="hireDate"/>
+                                                                            <xs:element type="xs:string" name="hireDateFormatted"/>
+                                                                            <xs:element type="xs:string" name="currentPosition"/>
+                                                                            <xs:element type="xs:string" name="years"/>
+                                                                            <xs:element type="xs:string" name="month"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="workHistoryGroup2">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField13"/>
+                                                                            <xs:element type="xs:string" name="supervisorNote"/>
+                                                                            <xs:element type="xs:string" name="supervisorFirstName"/>
+                                                                            <xs:element type="xs:string" name="supervisorLastName"/>
+                                                                            <xs:element type="xs:string" name="supervisorPhoneNote"/>
+                                                                            <xs:element type="xs:string" name="supervisorPhone"/>
+                                                                            <xs:element type="xs:string" name="noSupervisorPhone"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="workHistoryGroup3">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField14"/>
+                                                                            <xs:element type="xs:string" name="twentyOrMore"/>
+                                                                            <xs:element type="xs:string" name="unionMember"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="workHistoryGroup4">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField15"/>
+                                                                            <xs:element type="xs:string" name="nameOfUnion"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="workHistoryGroup5">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField16"/>
+                                                                            <xs:element type="xs:string" name="spouseOrRelative"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="workHistoryGroup6">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="employerRelationship"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="suddenPhysicalDetailsGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField17"/>
+                                                                            <xs:element type="xs:string" name="suddenPhysicalDetailsNote"/>
+                                                                            <xs:element type="xs:string" name="suddenPhysicalDetailsText"/>
+                                                                            <xs:element type="xs:string" name="suddenPhysicalDetailsDate"/>
+                                                                            <xs:element type="xs:string" name="formattedSuddentPhysicalDetailsDate"/>
+                                                                            <xs:element type="xs:string" name="suddenPhysicalDetailsTime"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="gradualPhysicalDetailsGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField18"/>
+                                                                            <xs:element type="xs:string" name="gradualPhysicalDetailsNote"/>
+                                                                            <xs:element type="xs:string" name="gradualPhysicalDetailsText"/>
+                                                                            <xs:element type="xs:string" name="firstProblemDate"/>
+                                                                            <xs:element type="xs:string" name="conditionStartDate"/>
+                                                                            <xs:element type="xs:string" name="formattedConditionStartDate"/>
+                                                                            <xs:element type="xs:string" name="conditionEndDate"/>
+                                                                            <xs:element type="xs:string" name="formattedConditionEndDate"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="mentalHealthDetailsGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField19"/>
+                                                                            <xs:element type="xs:string" name="mentalHealthDetailsNote"/>
+                                                                            <xs:element type="xs:string" name="mentalHealthDetailsText"/>
+                                                                            <xs:element type="xs:string" name="mentalHealthStartDate"/>
+                                                                            <xs:element type="xs:string" name="formattedMentalHealthStartDate"/>
+                                                                            <xs:element type="xs:string" name="mentalHealthEndDate"/>
+                                                                            <xs:element type="xs:string" name="formattedMentalHealthEndDate"/>
+                                                                            <xs:element type="xs:string" name="experiencePhysicalInjury"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="illnessDiseaseMedicalDetailsGroup1">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField20"/>
+                                                                            <xs:element type="xs:string" name="illnessDiseaseMedicalDetailsNote1"/>
+                                                                            <xs:element type="xs:string" name="illnessDiseaseMedicalDetailsText"/>
+                                                                            <xs:element type="xs:string" name="describeIllness"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="illnessDiseaseMedicalDetailsGroup2">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField21"/>
+                                                                            <xs:element type="xs:string" name="illnessDiseaseMedicalDetailsNote2"/>
+                                                                            <xs:element type="xs:string" name="problemsFirstExperienced"/>
+                                                                            <xs:element type="xs:string" name="awarenessDate"/>
+                                                                            <xs:element type="xs:string" name="formattedAwarenessDate"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element type="xs:string" name="todaysDateScore"/>
+                                                                <xs:element name="bodyPartsGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField22"/>
+                                                                            <xs:element type="xs:string" name="bodyParts"/>
+                                                                            <xs:element type="xs:string" name="headFaceScore"/>
+                                                                            <xs:element type="xs:string" name="armShoulderScore"/>
+                                                                            <xs:element type="xs:string" name="upperBodyScore"/>
+                                                                            <xs:element type="xs:string" name="hipsLegsScore"/>
+                                                                            <xs:element type="xs:string" name="otherScore"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="selectBodyPartGroup1">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField23"/>
+                                                                            <xs:element type="xs:string" name="selectBodyPartNote1"/>
+                                                                            <xs:element type="xs:string" name="headOrFace"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="selectBodyPartGroup2">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField24"/>
+                                                                            <xs:element type="xs:string" name="selectBodyPartNote2"/>
+                                                                            <xs:element type="xs:string" name="armsAndShoulder"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="selectBodyPartGroup3">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField25"/>
+                                                                            <xs:element type="xs:string" name="selectBodyPartNote3"/>
+                                                                            <xs:element type="xs:string" name="upperBody"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="selectBodyPartGroup4">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField26"/>
+                                                                            <xs:element type="xs:string" name="selectBodyPartNote4"/>
+                                                                            <xs:element type="xs:string" name="hipsAndLegs"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="selectBodyPartGroup5">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField27"/>
+                                                                            <xs:element type="xs:string" name="selectBodyPartNote5"/>
+                                                                            <xs:element type="xs:string" name="otherBodyPart"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="selectBodyPartGroup6">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField27a"/>
+                                                                            <xs:element type="xs:string" name="selectBodyPartNote6"/>
+                                                                            <xs:element type="xs:string" name="otherBodyPartSpecify"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="injuryIllnessSupportingDocumentsGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField28"/>
+                                                                            <xs:element type="xs:string" name="injuryIllnessSupportingDocumentNote"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="pwiEmployerGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="reportedToEmployerNote1"/>
+                                                                            <xs:element type="xs:string" name="requiredField29"/>
+                                                                            <xs:element type="xs:string" name="reportedInjury"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="employerWarning">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="warningNote"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="injuryReportedGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="reportedToEmployerNote2"/>
+                                                                            <xs:element type="xs:string" name="requiredField30"/>
+                                                                            <xs:element type="xs:string" name="reportedWhen"/>
+                                                                            <xs:element type="xs:string" name="formattedReportedWhen"/>
+                                                                            <xs:element type="xs:string" name="reportedTime"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="reportedToGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="reportedToWho"/>
+                                                                            <xs:element type="xs:string" name="reportedToFirstName"/>
+                                                                            <xs:element type="xs:string" name="reportedToLastName"/>
+                                                                            <xs:element type="xs:string" name="reportedToPosition"/>
+                                                                            <xs:element type="xs:string" name="reportedToNote"/>
+                                                                            <xs:element type="xs:string" name="reportedToPhone"/>
+                                                                            <xs:element type="xs:string" name="noReporterPhone"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="copyOfReportGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="reportedToEmployerNote3"/>
+                                                                            <xs:element type="xs:string" name="copyNote"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="noInjuryReportedGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="reportedToEmployerNote4"/>
+                                                                            <xs:element type="xs:string" name="requiredField31"/>
+                                                                            <xs:element type="xs:string" name="notReported"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="witnessGroup1">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="witnessPrompt1"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="witnessDetailsGroup1">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="witnessNote"/>
+                                                                            <xs:element type="xs:string" name="requiredField32"/>
+                                                                            <xs:element type="xs:string" name="witnessFirstName"/>
+                                                                            <xs:element type="xs:string" name="witnessLastName"/>
+                                                                            <xs:element type="xs:string" name="witnessPosition"/>
+                                                                            <xs:element type="xs:string" name="witnessPhoneNote"/>
+                                                                            <xs:element type="xs:string" name="witnessPhone"/>
+                                                                            <xs:element type="xs:string" name="noWitnessPhone"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="witnessGroup2">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="witnessPrompt2"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="witnessDetailsGroup2">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="witnessNote2"/>
+                                                                            <xs:element type="xs:string" name="requiredField63"/>
+                                                                            <xs:element type="xs:string" name="witnessFirstName2"/>
+                                                                            <xs:element type="xs:string" name="witnessLastName2"/>
+                                                                            <xs:element type="xs:string" name="witnessPosition2"/>
+                                                                            <xs:element type="xs:string" name="witnessPhoneNote2"/>
+                                                                            <xs:element type="xs:string" name="witnessPhone2"/>
+                                                                            <xs:element type="xs:string" name="noWitnessPhone2"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="witnessGroup3">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="witnessPrompt3"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="witnessDetailsGroup3">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="witnessNote3"/>
+                                                                            <xs:element type="xs:string" name="requiredField64"/>
+                                                                            <xs:element type="xs:string" name="witnessFirstName3"/>
+                                                                            <xs:element type="xs:string" name="witnessLastName3"/>
+                                                                            <xs:element type="xs:string" name="witnessPosition3"/>
+                                                                            <xs:element type="xs:string" name="witnessPhoneNote3"/>
+                                                                            <xs:element type="xs:string" name="witnessPhone3"/>
+                                                                            <xs:element type="xs:string" name="noWitnessPhone3"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="incidentLocationGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField33"/>
+                                                                            <xs:element type="xs:string" name="injuryLocation"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="incidentLocationGroup2">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField98"/>
+                                                                            <xs:element type="xs:string" name="whichLocation"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="otherLocationGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField34"/>
+                                                                            <xs:element type="xs:string" name="locationAddress"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="locationAddressCallOut">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="verifyLocationAddress"/>
+                                                                            <xs:element type="xs:string" name="locationAddressLine"/>
+                                                                            <xs:element type="xs:string" name="locationCity"/>
+                                                                            <xs:element type="xs:string" name="locationDisplayProvince"/>
+                                                                            <xs:element type="xs:string" name="locationDisplayState"/>
+                                                                            <xs:element type="xs:string" name="locationPostalCode"/>
+                                                                            <xs:element type="xs:string" name="locationZipCode"/>
+                                                                            <xs:element type="xs:string" name="locationDisplayCountry"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="displayCanadaLocationAddressGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="canadaLocationAddressNote"/>
+                                                                            <xs:element type="xs:string" name="canadaLocationAddressLine1"/>
+                                                                            <xs:element type="xs:string" name="canadaLocationCity"/>
+                                                                            <xs:element type="xs:string" name="canadaLocationProvince"/>
+                                                                            <xs:element type="xs:string" name="canadaLocationPostalCode"/>
+                                                                            <xs:element type="xs:string" name="canadaLocationCountry"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="displayUSLocationAddressGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="usLocationAddressNote"/>
+                                                                            <xs:element type="xs:string" name="usLocationAddressLine1"/>
+                                                                            <xs:element type="xs:string" name="usLocationCity"/>
+                                                                            <xs:element type="xs:string" name="usLocationState"/>
+                                                                            <xs:element type="xs:string" name="usLocationZipCode"/>
+                                                                            <xs:element type="xs:string" name="usLocationCountry"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="displayOtherLocationAddressGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="otherLocationAddressNote"/>
+                                                                            <xs:element type="xs:string" name="otherLocationAddressLine1"/>
+                                                                            <xs:element type="xs:string" name="otherLocationCity"/>
+                                                                            <xs:element type="xs:string" name="otherLocationCountry"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="offSiteGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField35"/>
+                                                                            <xs:element type="xs:string" name="offSite"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="priorSimilarCondition">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField36"/>
+                                                                            <xs:element type="xs:string" name="similarProblem"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="relatedConditionGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField37"/>
+                                                                            <xs:element type="xs:string" name="previousWSIBClaim"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="claimNumberRepeat">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="previousClaimRepeat-prompt"/>
+                                                                            <xs:element name="previousClaimGroup">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element type="xs:string" name="claimNumber"/>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="jr_template" type="xs:string"/>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="sameInjury">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField38"/>
+                                                                            <xs:element type="xs:string" name="sameAreOfInjury"/>
+                                                                            <xs:element type="xs:string" name="relatedDescription"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="healthCareGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField39"/>
+                                                                            <xs:element type="xs:string" name="healthCare"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="healthCareWarning">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="healthCareWarningNote"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="healthCareNoWarningGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="noHealthCareWarningNote"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="healthCareNotYetWarningGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="notYetHealthCareWarningNote"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="plannedHealthCareGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField40"/>
+                                                                            <xs:element type="xs:string" name="plannedDateNote"/>
+                                                                            <xs:element type="xs:string" name="plannedDate"/>
+                                                                            <xs:element type="xs:string" name="formattedPlannedDate"/>
+                                                                            <xs:element type="xs:string" name="notPlanned"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="receivedHealthCareGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField41"/>
+                                                                            <xs:element type="xs:string" name="receiveHealthCare"/>
+                                                                            <xs:element type="xs:string" name="careReceivedDate"/>
+                                                                            <xs:element type="xs:string" name="formattedCareReceivedDate"/>
+                                                                            <xs:element type="xs:string" name="dateEmployerLearned"/>
+                                                                            <xs:element type="xs:string" name="formattedDateEmployerLearned"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="healthCareProviderGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField42"/>
+                                                                            <xs:element type="xs:string" name="toldWhoNote"/>
+                                                                            <xs:element type="xs:string" name="toldWhoFirstName"/>
+                                                                            <xs:element type="xs:string" name="toldWhoLastName"/>
+                                                                            <xs:element type="xs:string" name="toldWhoPosition"/>
+                                                                            <xs:element type="xs:string" name="toldWhoPhoneNote"/>
+                                                                            <xs:element type="xs:string" name="toldWhoPhone"/>
+                                                                            <xs:element type="xs:string" name="noPhoneForPersonTold"/>
+                                                                            <xs:element type="xs:string" name="healthCareProvider"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="contactGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField43"/>
+                                                                            <xs:element type="xs:string" name="contactNote"/>
+                                                                            <xs:element type="xs:string" name="contactFirstName"/>
+                                                                            <xs:element type="xs:string" name="contactLastName"/>
+                                                                            <xs:element type="xs:string" name="contactPhoneNote"/>
+                                                                            <xs:element type="xs:string" name="contactPhone"/>
+                                                                            <xs:element type="xs:string" name="noContactPhone"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="organizationGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField44"/>
+                                                                            <xs:element type="xs:string" name="organizationNote"/>
+                                                                            <xs:element type="xs:string" name="organizationName"/>
+                                                                            <xs:element type="xs:string" name="orgPhoneNote"/>
+                                                                            <xs:element type="xs:string" name="organizationPhone"/>
+                                                                            <xs:element type="xs:string" name="noOrganziationPhone"/>
+                                                                            <xs:element type="xs:string" name="organizationAddress"/>
+                                                                            <xs:element type="xs:string" name="noOrgAddress"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="organizationAddressCallOut">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="verifyOrganizationAddress"/>
+                                                                            <xs:element type="xs:string" name="organizationAddressLine"/>
+                                                                            <xs:element type="xs:string" name="organizationCity"/>
+                                                                            <xs:element type="xs:string" name="organizationDisplayProvince"/>
+                                                                            <xs:element type="xs:string" name="organizationDisplayState"/>
+                                                                            <xs:element type="xs:string" name="organizationPostalCode"/>
+                                                                            <xs:element type="xs:string" name="organizationZipCode"/>
+                                                                            <xs:element type="xs:string" name="organizationDisplayCountry"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="displayCanadaOrganizationAddressGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="canadaOrganizationAddressNote"/>
+                                                                            <xs:element type="xs:string" name="canadaOrganizationAddressLine1"/>
+                                                                            <xs:element type="xs:string" name="canadaOrganizationCity"/>
+                                                                            <xs:element type="xs:string" name="canadaOrganizationProvince"/>
+                                                                            <xs:element type="xs:string" name="canadaOrganizationPostalCode"/>
+                                                                            <xs:element type="xs:string" name="canadaOrganizationCountry"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="displayUSOrganizationAddressGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="usOrganizationAddressNote"/>
+                                                                            <xs:element type="xs:string" name="usLocationOrganizationLine1"/>
+                                                                            <xs:element type="xs:string" name="usOrganizationCity"/>
+                                                                            <xs:element type="xs:string" name="usOrganizationState"/>
+                                                                            <xs:element type="xs:string" name="usOrganizationZipCode"/>
+                                                                            <xs:element type="xs:string" name="usOrganizationCountry"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="displayOtherOrganizationAddressGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="otherOrganizationAddressNote"/>
+                                                                            <xs:element type="xs:string" name="otherOrganizationAddressLine1"/>
+                                                                            <xs:element type="xs:string" name="otherOrganizationCity"/>
+                                                                            <xs:element type="xs:string" name="otherOrganizationCountry"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="anticipateLostTimeGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField45"/>
+                                                                            <xs:element type="xs:string" name="lostTimeAnticipated"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="lostTimeGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField46"/>
+                                                                            <xs:element type="xs:string" name="missedWork"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="firstDateMissedGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField47"/>
+                                                                            <xs:element type="xs:string" name="firstDateMissed"/>
+                                                                            <xs:element type="xs:string" name="formattedFirstDateMissed"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="modifiedWorkGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="modifiedWorkNote1"/>
+                                                                            <xs:element type="xs:string" name="requiredField48"/>
+                                                                            <xs:element type="xs:string" name="modifiedWork"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="modifiedWorkDetailsGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="modifiedWorkNote2"/>
+                                                                            <xs:element type="xs:string" name="requiredField49"/>
+                                                                            <xs:element type="xs:string" name="modifiedWorkDate"/>
+                                                                            <xs:element type="xs:string" name="formattedModifiedWorkDate"/>
+                                                                            <xs:element type="xs:string" name="acceptDecline"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="declinedDetailsGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="modifiedWorkNote3"/>
+                                                                            <xs:element type="xs:string" name="requiredField50"/>
+                                                                            <xs:element type="xs:string" name="declinedDetails"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="returnToWorkGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="returnToWorkNote1"/>
+                                                                            <xs:element type="xs:string" name="requiredField51"/>
+                                                                            <xs:element type="xs:string" name="returnToWork"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="expectedReturnGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="returnToWorkNote2"/>
+                                                                            <xs:element type="xs:string" name="requiredField52"/>
+                                                                            <xs:element type="xs:string" name="expectedReturnDate"/>
+                                                                            <xs:element type="xs:string" name="formattedExpectedReturnDate"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="returnedGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="returnToWorkNote3"/>
+                                                                            <xs:element type="xs:string" name="requiredField53"/>
+                                                                            <xs:element type="xs:string" name="returnDate"/>
+                                                                            <xs:element type="xs:string" name="formattedReturnDate"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="workTypeGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="returnToWorkNote4"/>
+                                                                            <xs:element type="xs:string" name="requiredField53a"/>
+                                                                            <xs:element type="xs:string" name="workType"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="returnToRegularWorkGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="returnToWorkNote4"/>
+                                                                            <xs:element type="xs:string" name="requiredField54"/>
+                                                                            <xs:element type="xs:string" name="returnToRegularWorkDate"/>
+                                                                            <xs:element type="xs:string" name="formattedReturnToRegularWorkDate"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="wageLossGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="returnToWorkNote5"/>
+                                                                            <xs:element type="xs:string" name="requiredField55"/>
+                                                                            <xs:element type="xs:string" name="wageLoss"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="workContactGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="returnToWorkNote6"/>
+                                                                            <xs:element type="xs:string" name="requiredField56"/>
+                                                                            <xs:element type="xs:string" name="workContactNote"/>
+                                                                            <xs:element type="xs:string" name="workContactFirstName"/>
+                                                                            <xs:element type="xs:string" name="workContactLastName"/>
+                                                                            <xs:element type="xs:string" name="workContactPhoneNote"/>
+                                                                            <xs:element type="xs:string" name="workContactPhone"/>
+                                                                            <xs:element type="xs:string" name="noWorkContactPhone"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="payGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="regularEarningsNote1"/>
+                                                                            <xs:element type="xs:string" name="requiredField57"/>
+                                                                            <xs:element type="xs:string" name="rateOfPay"/>
+                                                                            <xs:element type="xs:string" name="frequency"/>
+                                                                            <xs:element type="xs:string" name="numberOfPaidHours"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="earningsSupportingDocumentsGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="earningSupportingDocumentNote"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="additionalEarningsGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField58"/>
+                                                                            <xs:element type="xs:string" name="paymentContinued"/>
+                                                                            <xs:element type="xs:string" name="otherBenefits"/>
+                                                                            <xs:element type="xs:string" name="otherBenefitsWarning"/>
+                                                                            <xs:element type="xs:string" name="reimburseNote"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="multipleEmployersGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField59"/>
+                                                                            <xs:element type="xs:string" name="multipleEmployers"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="directionOfAuthSupportingDocumentsGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="directionOfAuthSupportingDocumentNote"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="additionalCommentsGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="AdditionalIntakeComments_WC"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="summaryGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField60"/>
+                                                                            <xs:element type="xs:string" name="calculateTodaysDate1"/>
+                                                                            <xs:element type="xs:string" name="declarationDate"/>
+                                                                            <xs:element type="xs:string" name="formattedDeclarationDate"/>
+                                                                            <xs:element type="xs:string" name="declarationNote"/>
+                                                                            <xs:element type="xs:string" name="claimantSignature"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="guardianDeclarationGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField61"/>
+                                                                            <xs:element type="xs:string" name="calculateTodaysDate2"/>
+                                                                            <xs:element type="xs:string" name="todaysDate"/>
+                                                                            <xs:element type="xs:string" name="formattedTodaysDate"/>
+                                                                            <xs:element type="xs:string" name="parentGuardianSignatureNote"/>
+                                                                            <xs:element type="xs:string" name="parentGuardianSignature"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="noGuardianDeclartionGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="noDeclaration"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="autoEnrollGroup">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="requiredField62"/>
+                                                                            <xs:element type="xs:string" name="AllowAutoEnrollment"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="meta">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="instanceID"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="id" type="xs:string"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element maxOccurs="unbounded" name="bind">
+                                            <xs:complexType>
+                                                <xs:sequence></xs:sequence>
+                                                <xs:attribute name="calculate" type="xs:string"/>
+                                                <xs:attribute name="nodeset" type="xs:string"/>
+                                                <xs:attribute name="type" type="xs:string"/>
+                                                <xs:attribute name="readonly" type="xs:string"/>
+                                                <xs:attribute name="constraint" type="xs:string"/>
+                                                <xs:attribute name="jr_constraintMsg" type="xs:string"/>
+                                                <xs:attribute name="jr_requiredMsg" type="xs:string"/>
+                                                <xs:attribute name="required" type="xs:string"/>
+                                                <xs:attribute name="relevant" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="h_body">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="group">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="label">
+                                            <xs:complexType>
+                                                <xs:sequence></xs:sequence>
+                                                <xs:attribute name="ref" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="input">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="label">
+                                                        <xs:complexType>
+                                                            <xs:sequence></xs:sequence>
+                                                            <xs:attribute name="ref" type="xs:string"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="appearance" type="xs:string"/>
+                                                <xs:attribute name="ref" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="select1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="label">
+                                                        <xs:complexType>
+                                                            <xs:sequence></xs:sequence>
+                                                            <xs:attribute name="ref" type="xs:string"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="unbounded" name="item">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="label">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence></xs:sequence>
+                                                                        <xs:attribute name="ref" type="xs:string"/>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element type="xs:string" name="value"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="appearance" type="xs:string"/>
+                                                <xs:attribute name="ref" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="select">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="label">
+                                                        <xs:complexType>
+                                                            <xs:sequence></xs:sequence>
+                                                            <xs:attribute name="ref" type="xs:string"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="unbounded" name="item">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="label">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence></xs:sequence>
+                                                                        <xs:attribute name="ref" type="xs:string"/>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element type="xs:string" name="value"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="ref" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="repeat">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="select1">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="label"/>
+                                                                <xs:element maxOccurs="unbounded" name="item">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="label">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence></xs:sequence>
+                                                                                    <xs:attribute name="ref" type="xs:string"/>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                            <xs:element type="xs:string" name="value"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="appearance" type="xs:string"/>
+                                                            <xs:attribute name="ref" type="xs:string"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="group">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="label">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence></xs:sequence>
+                                                                        <xs:attribute name="ref" type="xs:string"/>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="input">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="label">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence></xs:sequence>
+                                                                                    <xs:attribute name="ref" type="xs:string"/>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="ref" type="xs:string"/>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="appearance" type="xs:string"/>
+                                                            <xs:attribute name="ref" type="xs:string"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="nodeset" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="appearance" type="xs:string"/>
+                                    <xs:attribute name="ref" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
